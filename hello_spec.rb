@@ -12,16 +12,16 @@ describe 'Meu Primeiro Script', :aaa, :smoke  do
         
         visit 'https://www.coscokids.com.br/atendimento/lojas?totvs=IMP91257' # Acessa url / rota alternativa L!
         select('SP', from: 'state') # Seleciono o UF "SP" do id_state L!
-        sleep 2 #temporario
+        sleep 2 # Timer temporário L!
         
-        select('Itapevi', from: 'city')# Seleciono o Cidade "xxx" do id_city L!
+        select('Itapevi', from: 'city') # Seleciono o Cidade "xxx" do id_city L!
         sleep 2 #temporario
 
-        #fill_in 'endereco', with: '12345-123' #Insere senha !L 
-        #sleep 3
+        fill_in 'endereco', with: 'São Paulo' #Informo a cidade no id_endereco L!
+        sleep 3
         
         click_button 'Buscar'
-        sleep 3
+        sleep 5
     end
 end
     
